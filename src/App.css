@@ -1,0 +1,270 @@
+
+.app-shell {
+  min-height: 100vh;
+  background: #101116;
+}
+
+.topbar {
+  height: 68px;
+  border-bottom: 1px solid #252731;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
+.brand, .topbar-right, .status {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand svg {
+  color: #929aff;
+}
+
+.brand span:first-of-type {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.version, .section-label, .eyebrow,
+.panel-heading, .timeline-heading {
+  font-size: 10px;
+  letter-spacing: 1.2px;
+  color: #818592;
+  font-weight: 700;
+}
+
+.status {
+  font-size: 12px;
+  color: #a3a8b4;
+}
+
+.status-dot {
+  width: 7px;
+  height: 7px;
+  background: #60c79a;
+  border-radius: 50%;
+}
+
+.icon-button, .secondary-button {
+  background: #20222c;
+  color: #d6d8e0;
+  border: 1px solid #30333f;
+  border-radius: 8px;
+  padding: 9px 12px;
+}
+
+.workspace {
+  display: grid;
+  grid-template-columns: 230px 1fr;
+  min-height: calc(100vh - 68px);
+}
+
+.sidebar {
+  border-right: 1px solid #252731;
+  padding: 28px 18px;
+}
+
+.section-label {
+  margin: 15px 0;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 12px;
+  background: transparent;
+  border: none;
+  color: #9da1ae;
+  border-radius: 8px;
+  text-align: left;
+  font-size: 13px;
+}
+
+.nav-item.active {
+  background: #242638;
+  color: #a8afff;
+}
+
+.project-card {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 12px 8px;
+  font-size: 12px;
+  color: #b6bac6;
+}
+
+.project-card small {
+  display: block;
+  margin-top: 5px;
+  color: #777d8b;
+}
+
+.studio {
+  padding: 36px;
+  max-width: 1500px;
+  width: 100%;
+  margin: auto;
+}
+
+.studio-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.eyebrow {
+  color: #929aff;
+}
+
+h1 {
+  font-size: 28px;
+  margin: 12px 0 7px;
+}
+
+.subtitle, .empty-preview p {
+  font-size: 13px;
+  color: #898e9b;
+}
+
+.export-button, .primary-button {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  background: #747ff1;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 11px 16px;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.preview-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.preview-panel, .timeline-panel {
+  background: #191b23;
+  border: 1px solid #292c37;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.panel-heading {
+  display: flex;
+  justify-content: space-between;
+  padding: 18px;
+  border-bottom: 1px solid #292c37;
+}
+
+.panel-heading svg {
+  color: #858b9a;
+}
+
+.empty-preview {
+  min-height: 340px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  text-align: center;
+  background-image: radial-gradient(#303341 0.7px, transparent 0.7px);
+  background-size: 20px 20px;
+}
+
+.upload-icon {
+  width: 60px;
+  height: 60px;
+  display: grid;
+  place-items: center;
+  background: #272a39;
+  color: #9da5ff;
+  border-radius: 16px;
+}
+
+.empty-preview h3 {
+  font-size: 15px;
+  margin: 18px 0 0;
+}
+
+.primary-button {
+  margin: 15px 0;
+}
+
+.empty-preview small {
+  font-size: 10px;
+  color: #747a89;
+}
+
+.character-placeholder {
+  width: 110px;
+  height: 110px;
+  display: grid;
+  place-items: center;
+  background: #242638;
+  border-radius: 50%;
+  color: #929aff;
+}
+
+.timeline-panel {
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.timeline-heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.timeline-track {
+  height: 7px;
+  background: #30333e;
+  border-radius: 10px;
+  margin: 25px 0;
+}
+
+.timeline-progress {
+  width: 0;
+  height: 100%;
+  background: #929aff;
+  border-radius: inherit;
+}
+
+.timeline-controls {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.timeline-hint {
+  font-size: 11px;
+  color: #777d8b;
+}
+
+@media (max-width: 850px) {
+  .workspace {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .studio {
+    padding: 20px;
+  }
+
+  .preview-grid {
+    grid-template-columns: 1fr;
+  }
+}
